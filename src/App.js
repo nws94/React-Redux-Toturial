@@ -10,17 +10,13 @@ class App extends React.Component {
       number: 0
     }
   }
-  handleOnClick = (size) => {
-    this.setState({
-      number: this.state.number + size
-    });
-  }
+ 
   render() {
     return (
       <div className="App">
         <h1>Root</h1>
-        <AddNumberRoot handleOnClick={this.handleOnClick}></AddNumberRoot>
-        <DisplayNumberRoot number={this.state.number}></DisplayNumberRoot>
+        <AddNumberRoot></AddNumberRoot>
+        <DisplayNumberRoot></DisplayNumberRoot>
       </div>
     );
   }
